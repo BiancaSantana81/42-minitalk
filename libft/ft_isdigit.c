@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
+/*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 11:33:52 by bsantana          #+#    #+#             */
-/*   Updated: 2023/11/07 20:34:48 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/09 20:07:23 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{
-		return (2048);
+		return (1);
 	}
 	else
 	{
