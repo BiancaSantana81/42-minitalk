@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/26 09:47:45 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/05 08:38:09 by bsantana         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:32:44 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	{
 		j = 0;
 		while (big [i + j] == little[j] && little[j] && (i + j) < len)
-			j++;
+		{
+		j++;
+		}
 		if (little[j] == '\0')
+		{
 			return ((char *)&(big[i]));
-		i++;
+		}
+	i++;
 	}
 	return (NULL);
 }

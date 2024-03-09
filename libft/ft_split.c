@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 17:05:12 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/05 08:28:51 by bsantana         ###   ########.fr       */
+/*   Updated: 2023/11/07 20:09:24 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ static void	word_len(const char *s, char c, char **matrix)
 		}
 		if (len > 0)
 		{
-			matrix[p] = (char *)ft_calloc(len + 1, sizeof(char));
-			p++;
+		matrix[p] = (char *)ft_calloc(len + 1, sizeof(char));
+		p++;
 		}
 	}
 }
