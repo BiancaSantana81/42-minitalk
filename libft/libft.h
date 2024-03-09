@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 12:13:54 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/05 08:27:38 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/02/24 15:30:32 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 # include <stdlib.h>
 # include <limits.h>
 # include <unistd.h>
-# include "ft_printf.h"
+#include "ft_printf.h"
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);

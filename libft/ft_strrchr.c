@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
+/*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/23 12:55:18 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/05 08:36:58 by bsantana         ###   ########.fr       */
+/*   Updated: 2023/11/08 11:25:08 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ char	*ft_strrchr(const char *s, int c)
 		{
 			d = ((char *)s);
 		}
-		s++;
+	s++;
 	}
 	return (d);
 }
