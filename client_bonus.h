@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:34 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 12:26:34 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 16:09:08 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ int valid_pid(char *pid);
 /*
  * Função chamada ao receber um sinal do servidor.
  * Altera o valor da variável global "g_is_received" para 1 se o sinal recebido for SIGUSR1.
+ * Ao receber SIGUSR2, ele imprime uma mensagem no stdout indicando que a mensagem foi recebida pelo cliente.
  * 
  * Parâmetros:
  *    - sig: o sinal recebido.
@@ -53,7 +54,7 @@ void send_signal(int pid, char c);
 /*
  * Função para enviar uma mensagem para um processo servidor.
  * Percorre a string fornecida e envia cada caractere para o servidor
- * usando a função send_signal().
+ * usando a função send_signal(). Após enviar a string, envia um '\n' e um '\0' para o servidor.
  *
  * Parâmetros:
  *    - pid: identificador do processo servidor.

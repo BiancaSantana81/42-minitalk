@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:53 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 12:26:04 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 16:05:19 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@
  * Após acumular oito bits, a função escreve o caractere correspondente na saída padrão (stdout)
  * e zera o contador de bits e o acumulador do caractere para a próxima leitura.
  * Em seguida, envia um sinal SIGUSR1 de volta ao cliente para confirmar que está pronto para receber mais dados.
+ * Ao receber um '\0' envia um SIGUSR2 para o cliente. 
  * 
  * Parâmetros:
  *    - signum: o número do sinal recebido.
