@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.c                                           :+:      :+:    :+:   */
+/*   client_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 11:18:32 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 11:45:43 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ void is_received(int sig)
 {
     if (sig == SIGUSR1)
         g_is_received = 1;
+    if (sig == SIGUSR2)
+        ft_printf("Signal received!\n");
 }
 
 void send_signal(int pid, char c)
@@ -72,6 +74,7 @@ void send_message(int pid, char *str)
         i++;
     }
     send_signal(pid, '\n');
+    send_signal(pid, '\0');
 }
 
 int main(int argc, char **argv)
