@@ -6,12 +6,18 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/09 22:04:59 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 11:18:32 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "client.h"
 
+/*  
+ * Ao declarar a variável g_is_received como global, garantimos que seu valor pode ser 
+ * acessado e manipulado corretamente por todas as funções do programa. Isso é necessário 
+ * para coordenar a comunicação entre os processos envolvidos, onde diferentes partes do 
+ * código precisam sinalizar quando um sinal é recebido ou processado. 
+ */
 int g_is_received;
 
 int valid_pid(char *pid)
