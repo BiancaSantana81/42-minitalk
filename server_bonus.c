@@ -6,11 +6,11 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:49 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 11:49:10 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 12:26:16 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "server.h"
+#include "server_bonus.h"
 
 void handler_signal(int signum, siginfo_t *info, void *context)
 {

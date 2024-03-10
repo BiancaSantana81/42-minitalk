@@ -6,11 +6,11 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 11:45:43 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 12:27:10 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "client.h"
+#include "client_bonus.h"
 
 /*  
  * Ao declarar a variável g_is_received como global, garantimos que seu valor pode ser 

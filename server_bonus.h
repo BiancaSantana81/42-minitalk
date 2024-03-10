@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.h                                           :+:      :+:    :+:   */
+/*   server_bonus.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:53 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 11:10:47 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 12:26:04 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef SERVER_H
-# define SERVER_H
+#ifndef SERVER_BONUS_H
+# define SERVER_BONUS_H
 
 /* Bibliotecas */
 

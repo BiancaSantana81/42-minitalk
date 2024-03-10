@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   client.h                                           :+:      :+:    :+:   */
+/*   client_bonus.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:34 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/10 11:09:22 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/10 12:26:34 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLIENT_H
-# define CLIENT_H
+#ifndef CLIENT_BONUS_H
+# define CLIENT_BONUS_H
 
 /* Bibliotecas */
 

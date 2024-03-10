@@ -1,5 +1,4 @@
 # Colors to print message
-GREEN := \033[1;32m
 WHITE := \033[1;37m
 
 # Executable name
@@ -13,6 +12,8 @@ ft_calloc.c ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_put
 ft_itoa.c ft_strjoin.c ft_strtrim.c ft_strmapi.c ft_striteri.c ft_split.c ft_strrncmp.c ft_printf_flags.c \
 ft_printf_utils.c ft_printf.c
 
+MAKEFLAGS += --silent
+
 # Turn .c into .o
 FILES_O = $(FILES:.c=.o)
 
@@ -21,7 +22,6 @@ all: $(NAME)
 
 $(NAME): $(FILES_O)
 	ar rcs $(NAME) $(FILES_O)
-	@echo "$(GREEN)[Success!] Libft.a ready to use :)"
 
 # Compile individual objects
 %.o: %.c
@@ -34,7 +34,6 @@ clean:
 # Clean everything, including the executable
 fclean: clean
 	rm -f $(NAME)
-	@echo "$(WHITE)Cleaning - LIBFT - completed!"
 
 #Clean and rebuyind
 re: fclean all
