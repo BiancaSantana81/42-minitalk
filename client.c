@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/09 20:19:34 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/09 22:04:59 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,4 +83,5 @@ int main(int argc, char **argv)
 	sigaction(SIGUSR2, &siga, NULL);
     pid = ft_atoi(argv[1]);
     send_message(pid, argv[2]);
+    return (0);
 }
