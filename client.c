@@ -6,13 +6,27 @@
 /*   By: bsantana <bsantana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/03/09 19:04:48 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/03/09 20:19:34 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "client.h"
 
 int g_is_received;
+
+int valid_pid(char *pid)
+{
+    int i;
+
+    i = 0;
+    while (pid[i])
+    {
+        if (!ft_isdigit(pid[i]))
+            return (1);
+        i++;
+    }
+    return (0);
+}
 
 void is_received(int sig)
 {
@@ -60,7 +74,9 @@ int main(int argc, char **argv)
     __pid_t          pid;
 
     if(argc != 3)
-    return (ft_printf("Invalid number of arguments.\n"));
+        return (ft_printf("Invalid number of arguments.\n"));
+    if (valid_pid(argv[1]))
+        return (ft_printf("Insert a valid PID.\n"));
     siga.sa_flags = 0;
     siga.sa_handler = is_received;
     sigaction(SIGUSR1, &siga, NULL);
