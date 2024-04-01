@@ -6,14 +6,14 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:53 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 11:31:07 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 13:39:36 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SERVER_H
 # define SERVER_H
 
-/* Bibliotecas */
+/* Libraries */
 
 # include "libft/libft.h"
 # include <signal.h>

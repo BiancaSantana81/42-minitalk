@@ -6,14 +6,14 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:34 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 11:47:14 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 13:38:21 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLIENT_H
 # define CLIENT_H
 
-/* Bibliotecas */
+/* Libraries */
 
 # include "libft/libft.h"
 # include <signal.h>
@@ -41,24 +41,26 @@ int		valid_pid(char *pid);
 void	is_received(int sig);
 
 /*
- * Função para enviar um caractere para um processo com o sinal SIGUSR1 ou SIGUSR2.
- * O caractere é enviado bit a bit, onde cada bit é convertido em um sinal e enviado
- * para o processo identificado por 'pid'.
+ * Function for sending a character to a
+ * process with the SIGUSR1 or SIGUSR2 signal.
+ * The character is sent bit by bit, where
+ * each bit is converted into a signal and sent
+ * to the process identified by 'pid'.
  *
- * Parâmetros:
- *    - pid: identificador do processo destino.
- *    - c: caractere a ser enviado.
+ * Parameters:
+ * - pid: identifier of the target process.
+ * - c: character to be sent.
  */
 void	send_signal(int pid, char c);
 
 /*
- * Função para enviar uma mensagem para um processo servidor.
- * Percorre a string fornecida e envia cada caractere para o servidor
- * usando a função send_signal().
+ * Function to send a message to a server process.
+ * Goes through the string provided and sends each character to the server
+ * using the send_signal() function.
  *
- * Parâmetros:
- *    - pid: identificador do processo servidor.
- *    - str: string contendo a mensagem a ser enviada.
+ * Parameters:
+ * - pid: identifier of the server process.
+ * - str: string containing the message to be sent.
  */
 void	send_message(int pid, char *str);
 

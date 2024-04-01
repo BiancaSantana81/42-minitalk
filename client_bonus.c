@@ -6,17 +6,20 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 11:01:13 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 13:37:40 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "client_bonus.h"
 
 /*
- * Ao declarar a variável g_is_received como global, garantimos que seu valor pode ser 
- * acessado e manipulado corretamente por todas as funções do programa. Isso é necessário 
- * para coordenar a comunicação entre os processos envolvidos, onde diferentes partes do 
- * código precisam sinalizar quando um sinal é recebido ou processado. 
+ * By declaring the g_is_received variable
+ * as global, we guarantee that its value can be 
+ * accessed and manipulated correctly by all
+ * the functions in the program. This is necessary 
+ * to coordinate communication between
+ * the processes involved, where different parts of the 
+ * code need to signal when a signal is received or processed. 
  */
 int	g_is_received;
 

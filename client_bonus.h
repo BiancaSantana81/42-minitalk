@@ -6,64 +6,64 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:34 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 10:02:47 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 13:38:12 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CLIENT_BONUS_H
 # define CLIENT_BONUS_H
 
-/* Bibliotecas */
+/* Libraries */
 
 # include "libft/libft.h"
 # include <signal.h>
 
 /*
- * Função para verificar se o PID é composto apenas por números.
+ * Function to check if the PID is made up of numbers only.
  * 
- * Parâmetros:
- *    - pid: identificador do processo destino.
+ * Parameters:
+ * - pid: target process identifier.
  * 
- * Retorna:
- *    - 0 se o PID contém apenas números.
- *    - 1 se o PID contém caracteres que não são números.
+ * Returns:
+ * - 0 if the PID contains only numbers.
+ * - 1 if the PID contains characters that are not numbers.
  */
 int		valid_pid(char *pid);
 
 /*
- * Função chamada ao receber um sinal do servidor.
- * Altera o valor da variável global "g_is_received"
- * para 1 se o sinal recebido for SIGUSR1.
- * Ao receber SIGUSR2, ele imprime uma mensagem no
- * stdout indicando que a mensagem foi recebida pelo cliente.
+ * Function called when receiving a signal from the server.
+ * Changes the value of the global variable "g_is_received"
+ * to 1 if the signal received is SIGUSR1.
+ * When it receives SIGUSR2, it prints a message on the
+ * stdout indicating that the message was received by the client.
  * 
- * Parâmetros:
- *    - sig: o sinal recebido.
+ * Parameters:
+ * - sig: the signal received.
  */
 void	is_received(int sig);
 
 /*
- * Função para enviar um caractere para um
- * processo com o sinal SIGUSR1 ou SIGUSR2.
- * O caractere é enviado bit a bit, onde cada
- * bit é convertido em um sinal e enviado
- * para o processo identificado por 'pid'.
+ * Function for sending a character to a
+ * process with the SIGUSR1 or SIGUSR2 signal.
+ * The character is sent bit by bit, where each
+ * bit is converted into a signal and sent
+ * to the process identified by 'pid'.
  *
- * Parâmetros:
- *    - pid: identificador do processo destino.
- *    - c: caractere a ser enviado.
+ * Parameters:
+ * - pid: identifier of the target process.
+ * - c: character to be sent.
  */
 void	send_signal(int pid, char c);
 
 /*
- * Função para enviar uma mensagem para um processo servidor.
- * Percorre a string fornecida e envia
- * cada caractere para o servidor usando a função send_signal().
- * Após enviar a string, envia um '\n' e um '\0' para o servidor.
+ * Function to send a message to a server process.
+ * It loops through the given string and sends
+ * each character to the server using the send_signal() function.
+ * After sending the string, it sends a "\n" and a "\0" to the server.
  *
- * Parâmetros:
- *    - pid: identificador do processo servidor.
- *    - str: string contendo a mensagem a ser enviada.
+ * Parameters:
+ * - pid: identifier of the server process.
+ * - str: string containing the message to be sent.
  */
 void	send_message(int pid, char *str);
 
