@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:24 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 10:45:33 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 11:47:36 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
  * Ao declarar a variável g_is_received como global, garantimos que seu valor pode ser 
  * acessado e manipulado corretamente por todas as funções do programa. Isso é necessário 
  * para coordenar a comunicação entre os processos envolvidos, onde diferentes partes do 
- * código precisam sinalizar quando um sinal é recebido ou processado. 
+ * código precisam sinalizar quando um sinal é recebido ou processado.
  */
 int	g_is_received;
 

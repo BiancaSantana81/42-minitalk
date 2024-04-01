@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:34 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 09:44:39 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 11:47:14 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,24 @@
 # include <signal.h>
 
 /*
- * Função para verificar se o PID é composto apenas por números.
+ * Function to check if the PID is made up of numbers only.
  * 
- * Parâmetros:
- *    - pid: identificador do processo destino.
+ * Parameters:
+ * - pid: target process identifier.
  * 
- * Retorna:
- *    - 0 se o PID contém apenas números.
- *    - 1 se o PID contém caracteres que não são números.
+ * Returns:
+ * - 0 if the PID contains only numbers.
+ * - 1 if the PID contains characters that are not numbers.
  */
 int		valid_pid(char *pid);
 
 /*
- * Função chamada ao receber um sinal do servidor.
- * Altera o valor da variável global "g_is_received" para 1 se o sinal recebido for SIGUSR1.
+ * Function called when a signal is received from the server.
+ * Changes the value of the global
+ * variable "g_is_received" to 1 if the signal received is SIGUSR1.
  * 
- * Parâmetros:
- *    - sig: o sinal recebido.
+ * Parameters:
+ * - sig: the signal received.
  */
 void	is_received(int sig);
 
