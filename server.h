@@ -6,7 +6,7 @@
 /*   By: bsantana <bsantana@student.42sp.org.br     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/05 09:41:53 by bsantana          #+#    #+#             */
-/*   Updated: 2024/04/01 13:39:36 by bsantana         ###   ########.fr       */
+/*   Updated: 2024/04/01 15:04:25 by bsantana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@
  * about the received signal, including the client's PID.
  * - context: context of the signal.
  */
-
 void	handler_signal(int signum, siginfo_t *info, void *context);
 
 #endif
